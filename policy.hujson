@@ -9,7 +9,7 @@
                 "autogroup:admin",
             ],
             "dst": [
-                "*"
+                "*:*"
             ]
         },
         // Only allow access over exit node
