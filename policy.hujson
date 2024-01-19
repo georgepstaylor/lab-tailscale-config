@@ -1,2 +1,31 @@
 // This tailnet's ACLs are maintained in <https://github.com/georgepstaylor/lab-tailscale-config>
-{}
+{
+    // Admins can access everything
+    "acls": [
+        // dave@tailscale.com can access everything on host vega (defined below)
+        {
+            "action": "accept",
+            "src": [
+                "autogroup:admin",
+            ],
+            "dst": [
+                "*"
+            ]
+        },
+        // Only allow access over exit node
+        {
+            "action": "accept",
+            "src": [
+                "autogroup:exitnode",
+            ],
+            "dst": [
+                "*"
+            ]
+        },
+    ],
+    "hosts": {
+        "home-vnet": "10.0.0.0/24",
+        "homelab": "10.10.0.0/16",
+        "gs-vnet": "10.90.1.0/24",
+    },
+}
