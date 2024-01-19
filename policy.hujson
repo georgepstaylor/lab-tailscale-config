@@ -16,16 +16,16 @@
         {
             "action": "accept",
             "src": [
-                "autogroup:exitnode",
+                "group:gs_vnet",
             ],
             "dst": [
-                "*"
+                "host:gs_vnet"
             ]
         },
     ],
     "hosts": {
-        "home-vnet": "10.0.0.0/24",
+        "home_vnet": "10.0.0.0/24",
         "homelab": "10.10.0.0/16",
-        "gs-vnet": "10.90.1.0/24",
+        "gs_vnet": "10.90.1.0/24",
     },
 }
