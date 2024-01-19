@@ -19,7 +19,7 @@
                 "group:gs_vnet",
             ],
             "dst": [
-                "host:gs_vnet"
+                "gs_vnet:*"
             ]
         },
     ],
