@@ -29,6 +29,6 @@
         "gs_vnet": "10.90.1.0/24",
     },
     "groups": {
-        "gs_vnet": []
+        "group:gs_vnet": []
     }
 }
