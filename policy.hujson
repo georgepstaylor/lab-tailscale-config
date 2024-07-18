@@ -29,6 +29,6 @@
         "gs_vnet": "10.90.1.0/24",
     },
     "groups": {
-        "group:gs_vnet": [grstreten@github]
+        "group:gs_vnet": ["grstreten@github"]
     }
 }
