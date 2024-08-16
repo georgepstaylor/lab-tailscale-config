@@ -20,6 +20,8 @@ jobs:
           json-file-path: policy.hujson
           field-value-pairs: |
              $.groups: ${{ vars.TS_GROUPS }}
+      - name: test
+        run: ls /github/workspace
       - name: Deploy ACL
         if: github.event_name == 'push'
         id: deploy-acl
