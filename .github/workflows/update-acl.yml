@@ -19,7 +19,7 @@ jobs:
           json-file-path: policy.hujson
         # Multi-line string containing key/value pairs of JSON property paths and desired property values
           field-value-pairs: |
-             $.groups: ${{ vars.TS_GROUPS }}
+             $.groups: "${{ vars.TS_GROUPS }}"
 
       - name: Deploy ACL
         if: github.event_name == 'push'
