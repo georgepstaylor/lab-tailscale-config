@@ -16,12 +16,10 @@ jobs:
       - uses: georgepstaylor/render-json-template@v0.0.8
         id: render
         with:
-          # Path to JSON file serving as the template for rendering an output file. Required.
+          output-file-name: policy.json
           json-file-path: policy.hujson
-        # Multi-line string containing key/value pairs of JSON property paths and desired property values
           field-value-pairs: |
              $.groups: ${{ vars.TS_GROUPS }}
-
       - name: Deploy ACL
         if: github.event_name == 'push'
         id: deploy-acl
