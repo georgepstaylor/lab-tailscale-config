@@ -13,7 +13,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: georgepstaylor/render-json-template@v0.0.3
+      - uses: georgepstaylor/render-json-template@v0.0.6
         with:
           # Path to JSON file serving as the template for rendering an output file. Required.
           json-file-path: policy.hujson
