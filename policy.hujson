@@ -34,6 +34,11 @@
     "homelab": "10.10.0.0/16",
     "gs_vnet": "10.90.1.0/24"
   },
+  "tagOwners": {
+    "tag:ci": [
+      "autogroup:admin"
+    ],
+  },
   "groups": {
   }
 }
