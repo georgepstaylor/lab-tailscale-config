@@ -13,7 +13,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: georgepstaylor/render-json-template@v0.0.12
+      - uses: georgepstaylor/render-json-template@v0.0.13
         id: render
         with:
           output-file-name: policy.json
