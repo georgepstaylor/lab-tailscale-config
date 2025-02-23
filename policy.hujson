@@ -21,7 +21,7 @@
     {
       "action": "accept",
       "src": ["group:chris"],
-      "dst": ["homelab:*"]
+      "dst": ["homelab_apps:*"]
     },
     {
       "action": "accept",
@@ -30,9 +30,10 @@
     }
   ],
   "hosts": {
-    "home_vnet": "10.0.0.0/24",
-    "homelab": "10.10.0.0/16",
-    "gs_vnet": "10.90.1.0/24"
+    "home_vnet":    "10.0.0.0/24",
+    "homelab":      "10.10.0.0/16",
+    "homelab_apps": "10.10.0.0/16",
+    "gs_vnet":      "10.90.1.0/24"
   },
   "tagOwners": {
     "tag:ci": [
