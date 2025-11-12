@@ -2,9 +2,9 @@ name: Sync Tailscale ACLs
 
 on:
   push:
-    branches: [ "main" ]
+    branches: ["main"]
   pull_request:
-    branches: [ "main" ]
+    branches: ["main"]
 
 jobs:
   acls:
@@ -19,7 +19,7 @@ jobs:
           output-file-name: policy.json
           json-file-path: policy.hujson
           field-value-pairs: |
-             $.groups: ${{ vars.TS_GROUPS }}
+            $.groups: ${{ vars.TS_GROUPS }}
       - name: test
         run: ls ${{ github.workspace }}
       - name: Deploy ACL

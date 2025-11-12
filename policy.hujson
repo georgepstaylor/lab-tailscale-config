@@ -20,26 +20,42 @@
     },
     {
       "action": "accept",
-      "src": ["group:chris"],
-      "dst": ["homelab_apps:*"]
+      "src": [
+        "group:chris"
+      ],
+      "dst": [
+        "homelab_apps:*"
+      ]
     },
     {
       "action": "accept",
-      "src": ["autogroup:shared"],
-      "dst": ["autogroup:internet:*"]
+      "src": [
+        "autogroup:shared"
+      ],
+      "dst": [
+        "autogroup:internet:*"
+      ]
+    },
+    {
+      "action": "accept",
+      "src": [
+        "group:ben"
+      ],
+      "dst": [
+        "autogroup:internet:*"
+      ]
     }
   ],
   "hosts": {
-    "home_vnet":    "10.0.0.0/24",
-    "homelab":      "10.10.0.0/16",
+    "home_vnet": "10.0.0.0/24",
+    "homelab": "10.10.0.0/16",
     "homelab_apps": "10.11.0.0/16",
-    "gs_vnet":      "10.90.1.0/24"
+    "gs_vnet": "10.90.1.0/24"
   },
   "tagOwners": {
     "tag:ci": [
       "autogroup:admin"
     ]
   },
-  "groups": {
-  }
+  "groups": {}
 }
